@@ -49,14 +49,20 @@ cmake_ninja_workdir = C$:/Users/Tatia/OneDrive/Desktop/Fall$ 2025/COP3530/Projec
 
 build cmake_object_order_depends_target_Project_2: phony || .
 
-build CMakeFiles/Project_2.dir/src/main.cpp.obj: CXX_COMPILER__Project_2_unscanned_Debug C$:/Users/Tatia/OneDrive/Desktop/Fall$ 2025/COP3530/Project$ 2/src/main.cpp || cmake_object_order_depends_target_Project_2
-  DEP_FILE = CMakeFiles\Project_2.dir\src\main.cpp.obj.d
+build CMakeFiles/Project_2.dir/src/Songs.cpp.obj: CXX_COMPILER__Project_2_unscanned_Debug C$:/Users/Tatia/OneDrive/Desktop/Fall$ 2025/COP3530/Project$ 2/src/Songs.cpp || cmake_object_order_depends_target_Project_2
+  DEP_FILE = CMakeFiles\Project_2.dir\src\Songs.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Project_2.dir
   OBJECT_FILE_DIR = CMakeFiles\Project_2.dir\src
 
-build CMakeFiles/Project_2.dir/src/Songs.cpp.obj: CXX_COMPILER__Project_2_unscanned_Debug C$:/Users/Tatia/OneDrive/Desktop/Fall$ 2025/COP3530/Project$ 2/src/Songs.cpp || cmake_object_order_depends_target_Project_2
-  DEP_FILE = CMakeFiles\Project_2.dir\src\Songs.cpp.obj.d
+build CMakeFiles/Project_2.dir/src/SortHeap.cpp.obj: CXX_COMPILER__Project_2_unscanned_Debug C$:/Users/Tatia/OneDrive/Desktop/Fall$ 2025/COP3530/Project$ 2/src/SortHeap.cpp || cmake_object_order_depends_target_Project_2
+  DEP_FILE = CMakeFiles\Project_2.dir\src\SortHeap.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Project_2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Project_2.dir\src
+
+build CMakeFiles/Project_2.dir/src/io.cpp.obj: CXX_COMPILER__Project_2_unscanned_Debug C$:/Users/Tatia/OneDrive/Desktop/Fall$ 2025/COP3530/Project$ 2/src/io.cpp || cmake_object_order_depends_target_Project_2
+  DEP_FILE = CMakeFiles\Project_2.dir\src\io.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Project_2.dir
   OBJECT_FILE_DIR = CMakeFiles\Project_2.dir\src
@@ -69,7 +75,7 @@ build CMakeFiles/Project_2.dir/src/Songs.cpp.obj: CXX_COMPILER__Project_2_unscan
 #############################################
 # Link the executable Project_2.exe
 
-build Project_2.exe: CXX_EXECUTABLE_LINKER__Project_2_Debug CMakeFiles/Project_2.dir/src/main.cpp.obj CMakeFiles/Project_2.dir/src/Songs.cpp.obj
+build Project_2.exe: CXX_EXECUTABLE_LINKER__Project_2_Debug CMakeFiles/Project_2.dir/src/Songs.cpp.obj CMakeFiles/Project_2.dir/src/SortHeap.cpp.obj CMakeFiles/Project_2.dir/src/io.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Project_2.dir

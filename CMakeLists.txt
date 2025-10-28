@@ -3,6 +3,10 @@ project(Project_2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Project_2 src/main.cpp
+add_executable(Project_2
         src/Songs.cpp
-        src/Songs.h)
+        include/Songs.h
+        src/SortHeap.cpp
+        include/SortHeap.h
+        include/io.h
+        src/io.cpp)
