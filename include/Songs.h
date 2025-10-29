@@ -11,18 +11,19 @@
 #include <string>
 using namespace std;
 
+//Milestone 1
 
 struct Songs {
-    string Title;
-    string Artist;
-    double Hotness = 0.0;
-    int OrginalInd = 0;
+    string title;
+    string artist;
+    double hotness = 0.0;
+    int orginalInd = 0;
 
 };
 
 inline void printSong(const Songs& song) {
-    cout << song.Title << "-" <<  song.Artist
-    << "(Hotness : " << song.Hotness << endl;
+    cout << song.title << "-" <<  song.artist
+    << "(Hotness : " << song.hotness << endl;
 }
 
 

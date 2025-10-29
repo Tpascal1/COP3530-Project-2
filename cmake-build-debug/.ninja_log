@@ -1,0 +1,12 @@
+# ninja log v6
+14	530	7833224373458624	build.ninja	75faf4ed55ea42f5
+13	27	7833223464665738	clean	a4eb89f19bea5542
+12	616	7833223467207938	CMakeFiles/Project_2.dir/src/Songs.cpp.obj	843530dd57616a2d
+20	646	7833223467291831	CMakeFiles/Project_2.dir/src/SortHeap.cpp.obj	d74a30f16d95a5ac
+29	2143	7833223467381980	CMakeFiles/Project_2.dir/src/io.cpp.obj	9a1dcf5ba71e5c90
+8	21	7833225270961809	clean	8392e2beeef9a021
+14	756	7833225274624114	CMakeFiles/Project_2.dir/src/Songs.cpp.obj	843530dd57616a2d
+36	800	7833225274843372	CMakeFiles/Project_2.dir/src/main.cpp.obj	97244df3f8a86974
+22	825	7833225274700519	CMakeFiles/Project_2.dir/src/SortHeap.cpp.obj	d74a30f16d95a5ac
+30	2461	7833225274777630	CMakeFiles/Project_2.dir/src/io.cpp.obj	9a1dcf5ba71e5c90
+2462	2700	7833225299106441	Project_2.exe	1942e005f24cb6e1

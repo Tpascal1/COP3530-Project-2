@@ -5,8 +5,9 @@
 #ifndef IO_H
 #define IO_H
 #include "Songs.h"
+#include <vector>
 using namespace std;
 
-std::vector<string> loadSongs(const string& fileneame);
+std::vector<Songs> loadSongs(const string& filename); //Milestone 1
 
 #endif //IO_H
