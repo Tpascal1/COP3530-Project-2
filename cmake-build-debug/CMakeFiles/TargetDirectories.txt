@@ -1,0 +1,3 @@
+C:/Users/Tatia/OneDrive/Desktop/Fall 2025/COP3530/DownToKode/COP3530-Project-2/cmake-build-debug/CMakeFiles/project2.dir
+C:/Users/Tatia/OneDrive/Desktop/Fall 2025/COP3530/DownToKode/COP3530-Project-2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Tatia/OneDrive/Desktop/Fall 2025/COP3530/DownToKode/COP3530-Project-2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
