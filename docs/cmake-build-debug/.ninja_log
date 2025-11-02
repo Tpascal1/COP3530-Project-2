@@ -1,0 +1,24 @@
+# ninja log v6
+41	1004	7833855555497900	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/Songs.cpp.obj	368b67a4dfe0b002
+73	1273	7833855555792051	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/main.cpp.obj	e4453df50b6bb801
+66	1294	7833855555717420	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/io.cpp.obj	bbe037f6a8021df2
+68	1053	7833857766554733	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/main.cpp.obj	e4453df50b6bb801
+57	1085	7833857766445993	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/SortHeap.cpp.obj	3f96239fd651040f
+87	742	7833862968462535	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/io.cpp.obj	bbe037f6a8021df2
+743	924	7833862975001967	Project_2.exe	6c61b52638487a72
+104	975	7833864209282007	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/SortHeap.cpp.obj	3f96239fd651040f
+976	1190	7833864217997013	Project_2.exe	6c61b52638487a72
+115	983	7833866423119484	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/SortHeap.cpp.obj	3f96239fd651040f
+984	1204	7833866431811560	Project_2.exe	6c61b52638487a72
+112	931	7833867008129981	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/SortHeap.cpp.obj	3f96239fd651040f
+52	930	7833867213172096	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/main.cpp.obj	e4453df50b6bb801
+44	936	7833867213085908	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/SortHeap.cpp.obj	3f96239fd651040f
+937	1147	7833867222019633	Project_2.exe	6c61b52638487a72
+64	945	7833882710298910	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/main.cpp.obj	e4453df50b6bb801
+946	1143	7833882719096536	Project_2.exe	6c61b52638487a72
+92	1040	7833882976328499	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/SortHeap.cpp.obj	3f96239fd651040f
+1041	1232	7833882985812633	Project_2.exe	6c61b52638487a72
+146	1170	7833889415069106	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/main.cpp.obj	e4453df50b6bb801
+1172	1421	7833889425319160	Project_2.exe	6c61b52638487a72
+59	1173	7833897001356023	CMakeFiles/Project_2.dir/C_/Users/Tatia/OneDrive/Desktop/Fall_2025/COP3530/Project_2/src/main.cpp.obj	e4453df50b6bb801
+1175	1404	7833897012523160	Project_2.exe	6c61b52638487a72

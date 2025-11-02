@@ -3,6 +3,7 @@
 //
 
 #include "io.h"
+<<<<<<< HEAD
 #include "json.hpp"
 #include "Songs.h"
 #include <fstream>
@@ -12,6 +13,14 @@ using json = nlohmann::json;
 using namespace std;
 
 std:: vector<Songs> loadSongsStub() {
+=======
+#include <vector>
+#include <string>
+#include "Songs.h"
+using namespace std;
+
+std:: vector<Songs> loadSongs(const string& filename) {
+>>>>>>> 88b68ad4da8bf6b3436464511d1fc670eb2e81ea
     return {
         {"Song A", "Artist 1", 0.90, 0}, {"Song B","Artist 2",0.90,1},
         {"Song C","Artist 3",0.50,2},
@@ -20,6 +29,7 @@ std:: vector<Songs> loadSongsStub() {
     };
 };
 
+<<<<<<< HEAD
 static double readHotness(const json& item) {
     if ( item.contains("song") && item["song"].contains("hotness") ) {
         const auto & h = item["song"]["hotness"];
@@ -91,4 +101,6 @@ std::vector<Songs> loadSongs(const string& filename) {
         song.push_back(song);
     }
 }
+=======
+>>>>>>> 88b68ad4da8bf6b3436464511d1fc670eb2e81ea
 
