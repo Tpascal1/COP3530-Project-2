@@ -12,7 +12,7 @@
 using namespace std;
 using json = nlohmann::json;
 
-std:: vector<Songs> loadSongs(const string& filename) {
+vector<Songs> loadSongs(const string& filename) {
     vector<Songs> songs; 
     ifstream file(filename);
 
@@ -24,6 +24,9 @@ std:: vector<Songs> loadSongs(const string& filename) {
     //https://stackoverflow.com/questions/32205981/reading-json-files-in-c
     json data;
     file >> data;
+
+    cout << "File opened with success" << endl; 
+
     file.close();
 
     int index = 0;
@@ -46,8 +49,8 @@ std:: vector<Songs> loadSongs(const string& filename) {
             s.title = "No ID";
         }
         //Checking song hotness
-        if (data[i]["song"]["hotttness"].is_number()) {
-            s.hotness = data[i]["song"]["hotttness"];
+        if (data[i]["song"]["hotttnesss"].is_number()) {
+            s.hotness = data[i]["song"]["hotttnesss"];
         }
         else {
             s.hotness = -1.0;  //return -1 for hotness if not found
@@ -61,7 +64,7 @@ std:: vector<Songs> loadSongs(const string& filename) {
         }
     }
 
-    cout << "Songs with valid name id and hotness: " << songs.size();
+    cout << "Songs with valid name id and hotness: " << songs.size() << endl;
     return songs; 
 
 };
