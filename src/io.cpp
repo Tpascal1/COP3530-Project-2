@@ -3,12 +3,15 @@
 //
 
 #include "io.h"
-#include <vector>
-#include <string>
+#include "json.hpp"
 #include "Songs.h"
+#include <fstream>
+#include <iostream>
+
+using json = nlohmann::json;
 using namespace std;
 
-std:: vector<Songs> loadSongs(const string& filename) {
+std:: vector<Songs> loadSongsStub() {
     return {
         {"Song A", "Artist 1", 0.90, 0}, {"Song B","Artist 2",0.90,1},
         {"Song C","Artist 3",0.50,2},
@@ -17,4 +20,75 @@ std:: vector<Songs> loadSongs(const string& filename) {
     };
 };
 
+static double readHotness(const json& item) {
+    if ( item.contains("song") && item["song"].contains("hotness") ) {
+        const auto & h = item["song"]["hotness"];
+        if (h.is_number()) {
+            return h.get<double>();
+        }
+        if (h.is_string()) {
+            try {
+                return std::stood(h.get<string>());
+
+            }
+            catch (...) {}
+        }
+    }
+    return 0.0;
+}
+
+std::vector<Songs> loadSongs(const string& filename) {
+    std::vector<Songs> song;
+
+    std::ifstream file(filename);
+    if (!file.is_open()) {
+        cerr << "Unable to open file " << filename << endl;
+        return song;
+    }
+
+    json data;
+    try {
+        file >> data;
+    }
+    catch (const std::exception& e) {
+        cerr << "Error: could not open file: " << filename << endl;
+        return song;
+    }
+
+    int idx = 0;
+
+    for (const auto& item : data) {
+        if (!item.contains("song")) {
+            continue;
+
+        }
+
+        const auto & s = item["song"];
+        if (!s.contains("title") || !s.contains("artist")) {
+            continue;
+        }
+
+        Songs song;
+        try {
+            song.title = s["title"].is_string() ? s["title"].get<string>() : "";
+            song.artist = s["artist"].is_string() ? s["artist"].get<string>() : "";
+        }
+        catch (...) {
+            continue;
+        }
+
+
+        song.hotness = readHotness(s);
+        if (song.hotness == 0.0) {
+            song.hotness = 0.0;
+        }
+
+        if (song.hotness > 1.0) {
+            song.hotness = 1.0;
+        }
+
+        song.orginalInd = idx++;
+        song.push_back(song);
+    }
+}
 

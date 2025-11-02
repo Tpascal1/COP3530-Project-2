@@ -8,6 +8,7 @@
 #include <vector>
 using namespace std;
 
+std::vector<Songs> loadSongsStub();
 std::vector<Songs> loadSongs(const string& filename); //Milestone 1
 
 #endif //IO_H
