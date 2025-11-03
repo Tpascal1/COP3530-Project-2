@@ -7,10 +7,13 @@
 #include "Songs.h"
 #include "io.h"
 #include "SortHeap.h"
+#include "UI.h"
 using namespace std;
 
 int main() {
     cout << "Project_build okay" << endl;
+
+    launchUI();
 
     return 0;
 }
