@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Project_2.exe"
+			"path" : "project2.exe"
 		},
 		{
-			"path" : "Project_2.pdb"
+			"path" : "project2.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -14,7 +14,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"include_directories"
+			"target_compile_options",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -34,7 +35,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 5,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -45,25 +52,29 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++20 -fdiagnostics-color=always"
+					"fragment" : "-g -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wpedantic"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 2,
-					"path" : "C:/Users/Tatia/OneDrive/Desktop/Fall 2025/COP3530/Project 2/include"
+					"backtrace" : 3,
+					"path" : "C:/Users/Tatia/OneDrive/Desktop/Fall 2025/COP3530/DownToKode/COP3530-Project-2/include"
 				}
 			],
 			"language" : "CXX",
-			"languageStandard" : 
-			{
-				"backtraces" : 
-				[
-					1
-				],
-				"standard" : "20"
-			},
 			"sourceIndexes" : 
 			[
 				0,
@@ -73,7 +84,7 @@
 			]
 		}
 	],
-	"id" : "Project_2::@6890427a1f51a3e7e1df",
+	"id" : "project2::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -93,8 +104,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Project_2",
-	"nameOnDisk" : "Project_2.exe",
+	"name" : "project2",
+	"nameOnDisk" : "project2.exe",
 	"paths" : 
 	{
 		"build" : ".",
