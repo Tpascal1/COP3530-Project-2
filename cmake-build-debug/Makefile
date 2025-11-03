@@ -177,6 +177,30 @@ src/SortHeap.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project2.dir\build.make CMakeFiles/project2.dir/src/SortHeap.cpp.s
 .PHONY : src/SortHeap.cpp.s
 
+src/SortMerge.obj: src/SortMerge.cpp.obj
+.PHONY : src/SortMerge.obj
+
+# target to build an object file
+src/SortMerge.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project2.dir\build.make CMakeFiles/project2.dir/src/SortMerge.cpp.obj
+.PHONY : src/SortMerge.cpp.obj
+
+src/SortMerge.i: src/SortMerge.cpp.i
+.PHONY : src/SortMerge.i
+
+# target to preprocess a source file
+src/SortMerge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project2.dir\build.make CMakeFiles/project2.dir/src/SortMerge.cpp.i
+.PHONY : src/SortMerge.cpp.i
+
+src/SortMerge.s: src/SortMerge.cpp.s
+.PHONY : src/SortMerge.s
+
+# target to generate assembly for a file
+src/SortMerge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project2.dir\build.make CMakeFiles/project2.dir/src/SortMerge.cpp.s
+.PHONY : src/SortMerge.cpp.s
+
 src/io.obj: src/io.cpp.obj
 .PHONY : src/io.obj
 
@@ -240,6 +264,9 @@ help:
 	@echo ... src/SortHeap.obj
 	@echo ... src/SortHeap.i
 	@echo ... src/SortHeap.s
+	@echo ... src/SortMerge.obj
+	@echo ... src/SortMerge.i
+	@echo ... src/SortMerge.s
 	@echo ... src/io.obj
 	@echo ... src/io.i
 	@echo ... src/io.s

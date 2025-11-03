@@ -6,5 +6,5 @@
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Configuring done (1.4s)
--- Generating done (0.0s)
+-- Generating done (0.1s)
 -- Build files have been written to: C:/Users/Tatia/OneDrive/Desktop/Fall 2025/COP3530/DownToKode/COP3530-Project-2/cmake-build-debug

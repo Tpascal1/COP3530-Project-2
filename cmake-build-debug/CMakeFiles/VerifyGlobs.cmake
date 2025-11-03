@@ -7,6 +7,7 @@ file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/Tatia/OneDrive/Desktop/Fall 2
 set(OLD_GLOB
   "C:/Users/Tatia/OneDrive/Desktop/Fall 2025/COP3530/DownToKode/COP3530-Project-2/src/Songs.cpp"
   "C:/Users/Tatia/OneDrive/Desktop/Fall 2025/COP3530/DownToKode/COP3530-Project-2/src/SortHeap.cpp"
+  "C:/Users/Tatia/OneDrive/Desktop/Fall 2025/COP3530/DownToKode/COP3530-Project-2/src/SortMerge.cpp"
   "C:/Users/Tatia/OneDrive/Desktop/Fall 2025/COP3530/DownToKode/COP3530-Project-2/src/io.cpp"
   "C:/Users/Tatia/OneDrive/Desktop/Fall 2025/COP3530/DownToKode/COP3530-Project-2/src/main.cpp"
   )
