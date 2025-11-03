@@ -12,6 +12,7 @@
 using namespace std;
 using json = nlohmann::json;
 
+
 vector<Songs> loadSongs(const string& filename) {
     vector<Songs> songs; 
     ifstream file(filename);
@@ -65,9 +66,10 @@ vector<Songs> loadSongs(const string& filename) {
     }
 
     cout << "Songs with valid name id and hotness: " << songs.size() << endl;
-    return songs; 
+    return songs;
+}
 
-std:: vector<Songs> loadSongs(const string& filename) {
+std:: vector<Songs> loadSongsStub() {
     return {
         {"Song A", "Artist 1", 0.90, 0}, {"Song B","Artist 2",0.90,1},
         {"Song C","Artist 3",0.50,2},
