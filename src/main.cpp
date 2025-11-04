@@ -5,6 +5,10 @@
 
 #include <iostream>
 #include <vector>
+#include "Songs.h"
+#include "io.h"
+#include "SortHeap.h"
+#include "UI.h"
 #include <chrono>
 #include "../include//SortHeap.h"
 #include "../include//Songs.h"
@@ -61,6 +65,8 @@ int main() {
             << " | Hotness: " << songs[i].hotness << endl;
     }
 
+
+    launchUI();
 
     return 0;
 }
