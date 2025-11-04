@@ -884,6 +884,10 @@ CMakeFiles/project2.dir/src/main.cpp.obj: C:/Users/Tatia/OneDrive/Desktop/Fall\ 
   C:/Users/Tatia/CLION-IDE/CLion\ 2025.1/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/Tatia/OneDrive/Desktop/Fall\ 2025/COP3530/DownToKode/COP3530-Project-2/include/Songs.h \
   C:/Users/Tatia/OneDrive/Desktop/Fall\ 2025/COP3530/DownToKode/COP3530-Project-2/include/SortHeap.h \
+  C:/Users/Tatia/OneDrive/Desktop/Fall\ 2025/COP3530/DownToKode/COP3530-Project-2/include/UI.h \
+  C:/Users/Tatia/OneDrive/Desktop/Fall\ 2025/COP3530/DownToKode/COP3530-Project-2/include/io.h \
+  C:/Users/Tatia/OneDrive/Desktop/Fall\ 2025/COP3530/DownToKode/COP3530-Project-2/include/Songs.h \
+  C:/Users/Tatia/OneDrive/Desktop/Fall\ 2025/COP3530/DownToKode/COP3530-Project-2/include/SortHeap.h \
   C:/Users/Tatia/OneDrive/Desktop/Fall\ 2025/COP3530/DownToKode/COP3530-Project-2/include/SortMerge.h \
   C:/Users/Tatia/OneDrive/Desktop/Fall\ 2025/COP3530/DownToKode/COP3530-Project-2/include/io.h
 
@@ -1421,3 +1425,5 @@ C:/Users/Tatia/CLION-IDE/CLion\ 2025.1/bin/mingw/x86_64-w64-mingw32/include/stdi
 C:/Users/Tatia/CLION-IDE/CLion\ 2025.1/bin/mingw/x86_64-w64-mingw32/include/string.h:
 
 C:/Users/Tatia/OneDrive/Desktop/Fall\ 2025/COP3530/DownToKode/COP3530-Project-2/src/main.cpp:
+
+C:/Users/Tatia/OneDrive/Desktop/Fall\ 2025/COP3530/DownToKode/COP3530-Project-2/include/UI.h:

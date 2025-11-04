@@ -201,6 +201,30 @@ src/SortMerge.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project2.dir\build.make CMakeFiles/project2.dir/src/SortMerge.cpp.s
 .PHONY : src/SortMerge.cpp.s
 
+src/UI.obj: src/UI.cpp.obj
+.PHONY : src/UI.obj
+
+# target to build an object file
+src/UI.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project2.dir\build.make CMakeFiles/project2.dir/src/UI.cpp.obj
+.PHONY : src/UI.cpp.obj
+
+src/UI.i: src/UI.cpp.i
+.PHONY : src/UI.i
+
+# target to preprocess a source file
+src/UI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project2.dir\build.make CMakeFiles/project2.dir/src/UI.cpp.i
+.PHONY : src/UI.cpp.i
+
+src/UI.s: src/UI.cpp.s
+.PHONY : src/UI.s
+
+# target to generate assembly for a file
+src/UI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project2.dir\build.make CMakeFiles/project2.dir/src/UI.cpp.s
+.PHONY : src/UI.cpp.s
+
 src/io.obj: src/io.cpp.obj
 .PHONY : src/io.obj
 
@@ -267,6 +291,9 @@ help:
 	@echo ... src/SortMerge.obj
 	@echo ... src/SortMerge.i
 	@echo ... src/SortMerge.s
+	@echo ... src/UI.obj
+	@echo ... src/UI.i
+	@echo ... src/UI.s
 	@echo ... src/io.obj
 	@echo ... src/io.i
 	@echo ... src/io.s
