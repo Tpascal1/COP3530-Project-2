@@ -59,11 +59,11 @@ int main() {
     cout << "Merge Sorge completed in" << duration.count() << "ms" << endl;
 
     cout << "\nTop 5 songs after sorting by descending order:\n";
-    for (int i = 0; i < songs.size(); i++) {
-        cout << i + 1 << ". " << songs[i].artist
-            << " - " << songs[i].title
-            << " | Hotness: " << songs[i].hotness << endl;
-    }
+    //for (int i = 0; i < songs.size(); i++) {
+        //cout << i + 1 << ". " << songs[i].artist
+            //<< " - " << songs[i].title
+            //<< " | Hotness: " << songs[i].hotness << endl;
+    //}
 
 
     launchUI();

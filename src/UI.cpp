@@ -3,7 +3,6 @@
 //
 
 #include "UI.h"
-#include <SFML/Graphics.hpp>
 #include <iostream>
 
 void launchUI() {
@@ -101,6 +100,7 @@ void launchUI() {
                 if (event.mouseButton.button == sf::Mouse::Left) {
                     if (heapBounds.contains(static_cast<sf::Vector2f>(mousePos))) {
                         //call heap sort function
+                        heapPressed(window);
                         //this is where we can probably call your guys' function with a certain number, N, of songs given by the user
                         std::cout << "Heap clicked\n";
                     }
@@ -155,5 +155,55 @@ void launchUI() {
         window.draw(bothRect);
         window.draw(bothText);
         window.display();
+    }
+}
+
+
+void heapPressed(sf::RenderWindow& window) {
+    //make image into sfml texture
+    sf::Texture Background;
+    if (!Background.loadFromFile("resources/UI_Assets/Title_Screen_Background.jpg")) {
+        std::cout << "Error loading image." << std::endl;
+    }
+
+    //make sprite and assign texture from above
+    sf::Sprite back;
+    back.setTexture(Background);
+
+    //set sprite position
+    back.setPosition(0,0);
+
+    //initialize font from assets
+    sf::Font font;
+    if (!font.loadFromFile("resources/UI_Assets/SuperShiny.ttf")) {
+        std::cout << "Error loading font." << std::endl;
+    }
+
+    //make/style text
+    sf::Text titleText;
+    titleText.setFont(font);
+    titleText.setString("Based On Hotness");
+    titleText.setCharacterSize(110);
+    titleText.setPosition(75,35);
+
+    //sf::RenderWindow window(sf::VideoMode(1920, 1080), "Group 42 - Project 2");
+    
+    while (window.isOpen()) {
+        sf::Event event;
+        while (window.pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                window.close();
+            }
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+                window.close();
+            }
+        }
+        
+        window.clear();
+        window.draw(back);
+        window.draw(titleText);
+        window.display();
+        
     }
 }
