@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePythonSetting">
+    <option name="pythonIntegrationState" value="YES" />
+  </component>
+<<<<<<< HEAD
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
+=======
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/docs">
+    <contentRoot DIR="$PROJECT_DIR$" />
+  </component>
+>>>>>>> 88b68ad4da8bf6b3436464511d1fc670eb2e81ea
+</project>
