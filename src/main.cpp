@@ -18,22 +18,25 @@ int main() {
 
 
     cout << "Loading songs is started" << endl;
-    vector<Songs> songs = loadSongs("data/music.json");
-    cout << "Total songs loaded is: " << songs.size() << endl;
+    vector<Songs> songsHeap = loadSongs("data/music.json");
+    cout << "Total songs loaded is: " << songsHeap.size() << endl;
 
-    // Check if song list is empty
-    if (songs.empty()) {
+    //checking if song list is empty
+    if (songsHeap.empty()) {
         cout << "No songs loaded" << endl;
         return 0;
     }
 
-    // Duplicate until 100k for timing
-    const size_t target = 100000;
-    const size_t ogsize = songs.size();
-    while (songs.size() < target) {
-        songs.push_back(songs[songs.size() % ogsize]);
+    //Duplicating until we get to 100k songs
+    size_t target = 100000;
+    size_t ogsize = songsHeap.size();
+    while (songsHeap.size() < target) {
+        songsHeap.push_back(songsHeap[songsHeap.size() % ogsize]);
     }
-    cout << "The dataset is being expanded to " << songs.size() << endl;
+    cout << "The dataset is being expanded to " << songsHeap.size() << endl;
+
+    vector<Songs> songsMerge = songsHeap;
+
 
     // Separate copies for each sort
     auto heapData  = songs;
