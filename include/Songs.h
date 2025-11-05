@@ -9,6 +9,7 @@
 #include <iostream>
 #include <ostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 //Milestone 1
@@ -21,9 +22,18 @@ struct Songs {
 
 };
 
-inline void printSong(const Songs& song) {
-    cout << song.title << "-" <<  song.artist
-    << "(Hotness : " << song.hotness << endl;
+inline void printSongs(const std::vector<Songs>& data,
+                       const std::string& label = "",
+                       size_t limit = 0) {
+    using namespace std;
+    if (!label.empty()) cout << "\n" << label << "\n";
+
+    size_t count = (limit == 0 || limit > data.size()) ? data.size() : limit;
+    for (size_t i = 0; i < count; ++i) {
+        cout << i + 1 << ". " << data[i].artist
+             << " - " << data[i].title
+             << " | Hotness: " << data[i].hotness << "\n";
+    }
 }
 
 

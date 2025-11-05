@@ -101,11 +101,26 @@ CMakeFiles/project2.dir/src/SortHeap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project2.dir/src/SortHeap.cpp.s"
 	C:\Users\Tatia\CLION-~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Tatia\OneDrive\Desktop\Fall 2025\COP3530\DownToKode\COP3530-Project-2\src\SortHeap.cpp" -o CMakeFiles\project2.dir\src\SortHeap.cpp.s
 
+CMakeFiles/project2.dir/src/SortMerge.cpp.obj: CMakeFiles/project2.dir/flags.make
+CMakeFiles/project2.dir/src/SortMerge.cpp.obj: CMakeFiles/project2.dir/includes_CXX.rsp
+CMakeFiles/project2.dir/src/SortMerge.cpp.obj: C:/Users/Tatia/OneDrive/Desktop/Fall\ 2025/COP3530/DownToKode/COP3530-Project-2/src/SortMerge.cpp
+CMakeFiles/project2.dir/src/SortMerge.cpp.obj: CMakeFiles/project2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Tatia\OneDrive\Desktop\Fall 2025\COP3530\DownToKode\COP3530-Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project2.dir/src/SortMerge.cpp.obj"
+	C:\Users\Tatia\CLION-~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project2.dir/src/SortMerge.cpp.obj -MF CMakeFiles\project2.dir\src\SortMerge.cpp.obj.d -o CMakeFiles\project2.dir\src\SortMerge.cpp.obj -c "C:\Users\Tatia\OneDrive\Desktop\Fall 2025\COP3530\DownToKode\COP3530-Project-2\src\SortMerge.cpp"
+
+CMakeFiles/project2.dir/src/SortMerge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project2.dir/src/SortMerge.cpp.i"
+	C:\Users\Tatia\CLION-~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Tatia\OneDrive\Desktop\Fall 2025\COP3530\DownToKode\COP3530-Project-2\src\SortMerge.cpp" > CMakeFiles\project2.dir\src\SortMerge.cpp.i
+
+CMakeFiles/project2.dir/src/SortMerge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project2.dir/src/SortMerge.cpp.s"
+	C:\Users\Tatia\CLION-~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Tatia\OneDrive\Desktop\Fall 2025\COP3530\DownToKode\COP3530-Project-2\src\SortMerge.cpp" -o CMakeFiles\project2.dir\src\SortMerge.cpp.s
+
 CMakeFiles/project2.dir/src/io.cpp.obj: CMakeFiles/project2.dir/flags.make
 CMakeFiles/project2.dir/src/io.cpp.obj: CMakeFiles/project2.dir/includes_CXX.rsp
 CMakeFiles/project2.dir/src/io.cpp.obj: C:/Users/Tatia/OneDrive/Desktop/Fall\ 2025/COP3530/DownToKode/COP3530-Project-2/src/io.cpp
 CMakeFiles/project2.dir/src/io.cpp.obj: CMakeFiles/project2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Tatia\OneDrive\Desktop\Fall 2025\COP3530\DownToKode\COP3530-Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project2.dir/src/io.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Tatia\OneDrive\Desktop\Fall 2025\COP3530\DownToKode\COP3530-Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project2.dir/src/io.cpp.obj"
 	C:\Users\Tatia\CLION-~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project2.dir/src/io.cpp.obj -MF CMakeFiles\project2.dir\src\io.cpp.obj.d -o CMakeFiles\project2.dir\src\io.cpp.obj -c "C:\Users\Tatia\OneDrive\Desktop\Fall 2025\COP3530\DownToKode\COP3530-Project-2\src\io.cpp"
 
 CMakeFiles/project2.dir/src/io.cpp.i: cmake_force
@@ -120,7 +135,7 @@ CMakeFiles/project2.dir/src/main.cpp.obj: CMakeFiles/project2.dir/flags.make
 CMakeFiles/project2.dir/src/main.cpp.obj: CMakeFiles/project2.dir/includes_CXX.rsp
 CMakeFiles/project2.dir/src/main.cpp.obj: C:/Users/Tatia/OneDrive/Desktop/Fall\ 2025/COP3530/DownToKode/COP3530-Project-2/src/main.cpp
 CMakeFiles/project2.dir/src/main.cpp.obj: CMakeFiles/project2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Tatia\OneDrive\Desktop\Fall 2025\COP3530\DownToKode\COP3530-Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project2.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Tatia\OneDrive\Desktop\Fall 2025\COP3530\DownToKode\COP3530-Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project2.dir/src/main.cpp.obj"
 	C:\Users\Tatia\CLION-~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project2.dir/src/main.cpp.obj -MF CMakeFiles\project2.dir\src\main.cpp.obj.d -o CMakeFiles\project2.dir\src\main.cpp.obj -c "C:\Users\Tatia\OneDrive\Desktop\Fall 2025\COP3530\DownToKode\COP3530-Project-2\src\main.cpp"
 
 CMakeFiles/project2.dir/src/main.cpp.i: cmake_force
@@ -135,6 +150,7 @@ CMakeFiles/project2.dir/src/main.cpp.s: cmake_force
 project2_OBJECTS = \
 "CMakeFiles/project2.dir/src/Songs.cpp.obj" \
 "CMakeFiles/project2.dir/src/SortHeap.cpp.obj" \
+"CMakeFiles/project2.dir/src/SortMerge.cpp.obj" \
 "CMakeFiles/project2.dir/src/io.cpp.obj" \
 "CMakeFiles/project2.dir/src/main.cpp.obj"
 
@@ -143,13 +159,14 @@ project2_EXTERNAL_OBJECTS =
 
 project2.exe: CMakeFiles/project2.dir/src/Songs.cpp.obj
 project2.exe: CMakeFiles/project2.dir/src/SortHeap.cpp.obj
+project2.exe: CMakeFiles/project2.dir/src/SortMerge.cpp.obj
 project2.exe: CMakeFiles/project2.dir/src/io.cpp.obj
 project2.exe: CMakeFiles/project2.dir/src/main.cpp.obj
 project2.exe: CMakeFiles/project2.dir/build.make
 project2.exe: CMakeFiles/project2.dir/linkLibs.rsp
 project2.exe: CMakeFiles/project2.dir/objects1.rsp
 project2.exe: CMakeFiles/project2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Tatia\OneDrive\Desktop\Fall 2025\COP3530\DownToKode\COP3530-Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable project2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Tatia\OneDrive\Desktop\Fall 2025\COP3530\DownToKode\COP3530-Project-2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable project2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(Project_2 LANGUAGES CXX)
+project(project2 LANGUAGES CXX)
 
 # Pick up all .cpp files in src/
 file(GLOB SRC_FILES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")

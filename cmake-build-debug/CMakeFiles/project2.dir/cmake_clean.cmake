@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project2.dir/src/Songs.cpp.obj.d"
   "CMakeFiles/project2.dir/src/SortHeap.cpp.obj"
   "CMakeFiles/project2.dir/src/SortHeap.cpp.obj.d"
+  "CMakeFiles/project2.dir/src/SortMerge.cpp.obj"
+  "CMakeFiles/project2.dir/src/SortMerge.cpp.obj.d"
   "CMakeFiles/project2.dir/src/io.cpp.obj"
   "CMakeFiles/project2.dir/src/io.cpp.obj.d"
   "CMakeFiles/project2.dir/src/main.cpp.obj"
