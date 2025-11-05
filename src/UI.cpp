@@ -101,18 +101,17 @@ void launchUI() {
                     if (heapBounds.contains(static_cast<sf::Vector2f>(mousePos))) {
                         //call heap sort function
                         heapPressed(window);
-                        //this is where we can probably call your guys' function with a certain number, N, of songs given by the user
                         std::cout << "Heap clicked\n";
                     }
                     if (mergeBounds.contains(static_cast<sf::Vector2f>(mousePos))) {
                         //call merge sort function
-                        //this is where we can probably call your guys' function with a certain number, N, of songs given by the user
+                        mergePressed(window);
                         std::cout << "Merge clicked\n";
 
                     }
                     if (bothBounds.contains(static_cast<sf::Vector2f>(mousePos))) {
                         //call both functions 
-                        //this is where we can probably call your guys' function with a certain number, N, of songs given by the user
+                        bothPressed(window);
                         std::cout << "Both clicked\n";
 
                     }
@@ -159,6 +158,7 @@ void launchUI() {
 }
 
 
+
 void heapPressed(sf::RenderWindow& window) {
     //make image into sfml texture
     sf::Texture Background;
@@ -180,11 +180,11 @@ void heapPressed(sf::RenderWindow& window) {
     }
 
     //make/style text
-    sf::Text titleText;
-    titleText.setFont(font);
-    titleText.setString("Based On Hotness");
-    titleText.setCharacterSize(110);
-    titleText.setPosition(75,35);
+    sf::Text Text;
+    Text.setFont(font);
+    Text.setString("Heap Sort");
+    Text.setCharacterSize(110);
+    Text.setPosition(60,35);
 
     //sf::RenderWindow window(sf::VideoMode(1920, 1080), "Group 42 - Project 2");
     
@@ -202,7 +202,108 @@ void heapPressed(sf::RenderWindow& window) {
         
         window.clear();
         window.draw(back);
-        window.draw(titleText);
+        window.draw(Text);
+        window.display();
+        
+    }
+}
+
+
+void mergePressed(sf::RenderWindow& window) {
+    //make image into sfml texture
+    sf::Texture Background;
+    if (!Background.loadFromFile("resources/UI_Assets/Title_Screen_Background.jpg")) {
+        std::cout << "Error loading image." << std::endl;
+    }
+
+    //make sprite and assign texture from above
+    sf::Sprite back;
+    back.setTexture(Background);
+
+    //set sprite position
+    back.setPosition(0,0);
+
+    //initialize font from assets
+    sf::Font font;
+    if (!font.loadFromFile("resources/UI_Assets/SuperShiny.ttf")) {
+        std::cout << "Error loading font." << std::endl;
+    }
+
+    //make/style text
+    sf::Text Text;
+    Text.setFont(font);
+    Text.setString("Merge Sort");
+    Text.setCharacterSize(110);
+    Text.setPosition(70,35);
+
+    //sf::RenderWindow window(sf::VideoMode(1920, 1080), "Group 42 - Project 2");
+    
+    while (window.isOpen()) {
+        sf::Event event;
+        while (window.pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                window.close();
+            }
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+                window.close();
+            }
+        }
+        
+        window.clear();
+        window.draw(back);
+        window.draw(Text);
+        window.display();
+        
+    }
+}
+
+
+
+void bothPressed(sf::RenderWindow& window) {
+    //make image into sfml texture
+    sf::Texture Background;
+    if (!Background.loadFromFile("resources/UI_Assets/Title_Screen_Background.jpg")) {
+        std::cout << "Error loading image." << std::endl;
+    }
+
+    //make sprite and assign texture from above
+    sf::Sprite back;
+    back.setTexture(Background);
+
+    //set sprite position
+    back.setPosition(0,0);
+
+    //initialize font from assets
+    sf::Font font;
+    if (!font.loadFromFile("resources/UI_Assets/SuperShiny.ttf")) {
+        std::cout << "Error loading font." << std::endl;
+    }
+
+    //make/style text
+    sf::Text Text;
+    Text.setFont(font);
+    Text.setString("Analysis");
+    Text.setCharacterSize(110);
+    Text.setPosition(75,35);
+
+    //sf::RenderWindow window(sf::VideoMode(1920, 1080), "Group 42 - Project 2");
+    
+    while (window.isOpen()) {
+        sf::Event event;
+        while (window.pollEvent(event)) {
+            if (event.type == sf::Event::Closed) {
+                window.close();
+            }
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+                window.close();
+            }
+        }
+        
+        window.clear();
+        window.draw(back);
+        window.draw(Text);
         window.display();
         
     }

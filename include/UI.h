@@ -9,5 +9,8 @@
 
 void launchUI(); 
 void heapPressed(sf::RenderWindow& window);
+void mergePressed(sf::RenderWindow& window);
+void bothPressed(sf::RenderWindow& window);
+
 
 #endif

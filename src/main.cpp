@@ -20,34 +20,37 @@ using namespace std::chrono;
 int main() {
 
     cout << "Loading songs is started" << endl;
-    vector<Songs> songs = loadSongs("data/music.json");
-    cout << "Total songs loaded is: " << songs.size() << endl;
+    vector<Songs> songsHeap = loadSongs("data/music.json");
+    cout << "Total songs loaded is: " << songsHeap.size() << endl;
 
     //checking if song list is empty
-    if (songs.empty()) {
+    if (songsHeap.empty()) {
         cout << "No songs loaded" << endl;
         return 0;
     }
 
-    ////Duplicating until we get to 100k songs
+    //Duplicating until we get to 100k songs
     size_t target = 100000;
-    size_t ogsize = songs.size();
-    while (songs.size() < target) {
-        songs.push_back(songs[songs.size() % ogsize]);
+    size_t ogsize = songsHeap.size();
+    while (songsHeap.size() < target) {
+        songsHeap.push_back(songsHeap[songsHeap.size() % ogsize]);
     }
-    cout << "The dataset is being expanded to " << songs.size() << endl;
+    cout << "The dataset is being expanded to " << songsHeap.size() << endl;
+
+    vector<Songs> songsMerge = songsHeap;
+
 
     //Heap Sort Timing
 
-    auto heapData = songs;
-    auto mergeData = songs;
+    auto heapData = songsHeap;
+    auto mergeData = songsMerge;
 
 
     cout << "\nSorting songs by hotness for Heap Sort:" << endl;
-    auto startH = high_resolution_clock::now();
+    auto startH = high_resolution_clock::now();   //record time before function is called
     heapSort(heapData);
-    auto endH = high_resolution_clock::now();
-    auto durationH = duration_cast<milliseconds>(endH - startH);
+    auto endH = high_resolution_clock::now();    //record time when function fnishes running
+    auto durationH = duration_cast<milliseconds>(endH - startH);    //calculate elapsed time in ms
     cout << "Heap Sort completed in" << durationH.count() << "ms" << endl;
 
     //Merge Sort Timing
@@ -59,11 +62,11 @@ int main() {
     cout << "Merge Sorge completed in" << duration.count() << "ms" << endl;
 
     cout << "\nTop 5 songs after sorting by descending order:\n";
-    //for (int i = 0; i < songs.size(); i++) {
-        //cout << i + 1 << ". " << songs[i].artist
-            //<< " - " << songs[i].title
-            //<< " | Hotness: " << songs[i].hotness << endl;
-    //}
+    for (int i = 0; i < songsHeap.size(); i++) {
+        cout << i + 1 << ". " << songsHeap[i].artist
+            << " - " << songsHeap[i].title
+             << " | Hotness: " << songsHeap[i].hotness << endl;
+    }
 
 
     launchUI();
