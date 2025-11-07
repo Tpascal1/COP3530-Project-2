@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build SFML Project",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "call \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat\" && cl /EHsc src\\*.cpp /I include /I resources\\SFML-2.5.1\\include /Fe:executable\\COP3530-Project-2.exe /link /LIBPATH:resources\\SFML-2.5.1\\lib sfml-graphics.lib sfml-window.lib sfml-system.lib"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"]
+        }
+    ]
+}

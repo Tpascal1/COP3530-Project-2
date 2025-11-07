@@ -9,9 +9,8 @@
 #include "Songs.h"
 using namespace std ;
 
-void heapSortByHotness( vector <Songs> & a);
-bool hotter ( const Songs& a, const Songs& b);
-void siftDown (vector <Songs>& a, int start, int end);
+//Sort song by descending hotness using heap sort
+void heapSort( vector <Songs> & a);
 
 
 
