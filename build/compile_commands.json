@@ -1,0 +1,38 @@
+[
+{
+  "directory": "C:/Users/d35hn/COP3530/COP3530-Project-2/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/project2.dir/includes_CXX.rsp -g -Wall -Wextra -Wpedantic -o CMakeFiles\\project2.dir\\src\\Songs.cpp.obj -c C:\\Users\\d35hn\\COP3530\\COP3530-Project-2\\src\\Songs.cpp",
+  "file": "C:/Users/d35hn/COP3530/COP3530-Project-2/src/Songs.cpp",
+  "output": "CMakeFiles/project2.dir/src/Songs.cpp.obj"
+},
+{
+  "directory": "C:/Users/d35hn/COP3530/COP3530-Project-2/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/project2.dir/includes_CXX.rsp -g -Wall -Wextra -Wpedantic -o CMakeFiles\\project2.dir\\src\\SortHeap.cpp.obj -c C:\\Users\\d35hn\\COP3530\\COP3530-Project-2\\src\\SortHeap.cpp",
+  "file": "C:/Users/d35hn/COP3530/COP3530-Project-2/src/SortHeap.cpp",
+  "output": "CMakeFiles/project2.dir/src/SortHeap.cpp.obj"
+},
+{
+  "directory": "C:/Users/d35hn/COP3530/COP3530-Project-2/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/project2.dir/includes_CXX.rsp -g -Wall -Wextra -Wpedantic -o CMakeFiles\\project2.dir\\src\\SortMerge.cpp.obj -c C:\\Users\\d35hn\\COP3530\\COP3530-Project-2\\src\\SortMerge.cpp",
+  "file": "C:/Users/d35hn/COP3530/COP3530-Project-2/src/SortMerge.cpp",
+  "output": "CMakeFiles/project2.dir/src/SortMerge.cpp.obj"
+},
+{
+  "directory": "C:/Users/d35hn/COP3530/COP3530-Project-2/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/project2.dir/includes_CXX.rsp -g -Wall -Wextra -Wpedantic -o CMakeFiles\\project2.dir\\src\\UI.cpp.obj -c C:\\Users\\d35hn\\COP3530\\COP3530-Project-2\\src\\UI.cpp",
+  "file": "C:/Users/d35hn/COP3530/COP3530-Project-2/src/UI.cpp",
+  "output": "CMakeFiles/project2.dir/src/UI.cpp.obj"
+},
+{
+  "directory": "C:/Users/d35hn/COP3530/COP3530-Project-2/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/project2.dir/includes_CXX.rsp -g -Wall -Wextra -Wpedantic -o CMakeFiles\\project2.dir\\src\\io.cpp.obj -c C:\\Users\\d35hn\\COP3530\\COP3530-Project-2\\src\\io.cpp",
+  "file": "C:/Users/d35hn/COP3530/COP3530-Project-2/src/io.cpp",
+  "output": "CMakeFiles/project2.dir/src/io.cpp.obj"
+},
+{
+  "directory": "C:/Users/d35hn/COP3530/COP3530-Project-2/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/project2.dir/includes_CXX.rsp -g -Wall -Wextra -Wpedantic -o CMakeFiles\\project2.dir\\src\\main.cpp.obj -c C:\\Users\\d35hn\\COP3530\\COP3530-Project-2\\src\\main.cpp",
+  "file": "C:/Users/d35hn/COP3530/COP3530-Project-2/src/main.cpp",
+  "output": "CMakeFiles/project2.dir/src/main.cpp.obj"
+}
+]
